@@ -52,5 +52,11 @@ CREATE TABLE tournament_details(
     FOREIGN KEY (tournament_id) REFERENCES tournaments(id)
 );
 
-
+CREATE TABLE role(
+	id INT AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    PRIMARY KEY(id),
+    UNIQUE(name),
+    INDEX(name)
+);
 
