@@ -76,3 +76,11 @@ CREATE TABLE strokes_styles(
     UNIQUE(name),
     INDEX(name)
 );
+
+CREATE TABLE distance(
+	id INT AUTO_INCREMENT,
+    value INT NOT NULL,
+    PRIMARY KEY(id),
+    UNIQUE(value),
+    INDEX(value)
+);
