@@ -84,3 +84,13 @@ CREATE TABLE distance(
     UNIQUE(value),
     INDEX(value)
 );
+
+CREATE TABLE age_groups(
+	id INT AUTO_INCREMENT,
+    value INT NOT NULL,
+    PRIMARY KEY(id),
+    UNIQUE(value),
+    INDEX(value)
+);
+
+
