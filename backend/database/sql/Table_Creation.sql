@@ -93,4 +93,13 @@ CREATE TABLE age_groups(
     INDEX(value)
 );
 
+CREATE TABLE member_club_organisation(
+	id INT AUTO_INCREMENT,
+    members_id INT NOT NULL,
+    club_org_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(members_id) REFERENCES members(id),
+    FOREIGN KEY(club_org_id) REFERENCES clubs_or_organisations(id)
+);
+
 
