@@ -60,3 +60,12 @@ CREATE TABLE role(
     INDEX(name)
 );
 
+CREATE TABLE member_role(
+	id INT AUTO_INCREMENT,
+    member_id INT NOT NULL,
+    role_id INT NOT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(member_id) REFERENCES members(id),
+    FOREIGN KEY(role_id) REFERENCES role(id)
+);
+
