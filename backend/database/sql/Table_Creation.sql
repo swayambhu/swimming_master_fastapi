@@ -69,3 +69,10 @@ CREATE TABLE member_role(
     FOREIGN KEY(role_id) REFERENCES role(id)
 );
 
+CREATE TABLE strokes_styles(
+	id INT AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    PRIMARY KEY(id),
+    UNIQUE(name),
+    INDEX(name)
+);
